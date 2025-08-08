@@ -7,34 +7,37 @@
 </head>
 <body class="bg-red-500 overflow-hidden">
 
-    <header class="flex justify-between items-center bg-white px-[0.5em] py-4">
-        <div class="logo">logo</div>
+    <header class="flex w-full justify-between items-center bg-white px-[0.5em] lg:px-[6em] py-1 lg:py-1 shadow-lg">
+        <a href=""><img src="./ima/thrift_logo.png" alt="" class="w-20"></a>
 
-        <div class="nav flex">
-            
+        <div class="flex justify-between ">
+
             <!-- hamburger menu icon -->
             <div class="hamburger lg:hidden" id="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7">
-                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z">
-                </path>
-            </svg>
-        </div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7">
+                    <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z">
+                    </path>
+                </svg>
+            </div>
         
         <!-- navigation menu -->
-            <ul id="nav" class="absolute top-[2.9em] right-[-50em] transition-all ease flex flex-col justify-between w-[20em] h-[90vh] px-4 py-6 bg-white text-[1.3em] md:flex">
-                <div class="flex w-full flex-col gap-3 ">
-                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 pl-4 rounded-lg transition-all duration-300">Home</a></li>
-                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 pl-4 rounded-lg transition-all duration-300">About</a></li>
-                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 pl-4 rounded-lg transition-all duration-300">Contact</a></li>
-                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 pl-4 rounded-lg transition-all duration-300">Terms & conditions</a></li>
-                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 pl-4 rounded-lg transition-all duration-300">Services</a></li>
-                </div>
-                <div class="reg flex flex-col gap-3">
-                    <button class="bg-green-500 py-5 rounded-lg text-white">Login</button>
+            <ul id="nav" class="absolute top-[2.9em] lg:top-0 lg:gap-8 lg:relative right-[-50em] lg:right-0 transition-all ease flex flex-col lg:flex-row justify-between lg:items-center w-[20em] lg:w-full h-[90vh] lg:h-0 px-4 py-6 lg:py-2 bg-white lg:bg-transparent text-[1.3em] lg:text-[1em] overflow-hidden">
+               
+                <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">Home</a></li>
+                <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">About</a></li>
+                <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">Contact</a></li>
+                <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">Terms & conditions</a></li>
+                <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">Services</a></li>
+            
+                <div class="reg flex flex-col lg:flex-row gap-3 lg:hidden">
+                    <button class="bg-green-500 py-5 lg:py-0 rounded-lg text-white">Login</button>
                     <button class="hover:bg-green-500 hover:text-white py-5 rounded-lg transition-all duration-300">Register</button>
                 </div>
-            </ul>
-            
+            </ul> 
+        </div>
+        <div class="reg flex flex-col lg:flex-row gap-3 hidden lg:flex">
+            <button class="bg-green-500 py-2 px-8 rounded-lg text-white">Login</button>
+            <button class="hover:bg-green-500 hover:text-white py-5 px-6 lg:py-0 rounded-lg transition-all duration-300">Register</button>
         </div>
     </header>
 
