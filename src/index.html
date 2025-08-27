@@ -6,7 +6,7 @@
   <link href="./output.css" rel="stylesheet">
    
 </head>
-<body class="bg-red-500 overflow-hidden">
+<body class="bg-red-500 overflow-y-hidden">
 
     <header class="flex w-full justify-between items-center bg-white px-[0.5em] lg:px-[6em] py-1 lg:py-1 shadow-lg">
         <a href=""><img src="./ima/thrift_logo.png" alt="" class="w-20"></a>
@@ -22,7 +22,7 @@
             </div>
         
         <!-- navigation menu -->
-            <ul id="nav" class="z-50 absolute top-[2.9em] lg:top-0 lg:gap-8 lg:relative right-[-50em] lg:right-0 transition-all ease flex flex-col lg:flex-row justify-between lg:items-center w-[20em] lg:w-full h-[90vh] lg:h-0 px-4 py-6 lg:py-2 bg-white lg:bg-transparent text-[1.3em] lg:text-[1em] overflow-hidden">
+            <ul id="nav" class="overscroll-contain z-50 absolute top-[2.9em] lg:top-0 lg:gap-8 lg:relative right-[-50em] lg:right-0 transition-all ease flex flex-col lg:flex-row justify-between lg:items-center w-[20em] lg:w-full h-[90vh] lg:h-0 px-4 py-6 lg:py-2 bg-white lg:bg-transparent text-[1.3em] lg:text-[1em] overflow-hidden">
                <div class="links flex flex-col lg:flex-row gap-5">
                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">Home</a></li>
                    <li><a href="#" class="hover:bg-gray-200/50 w-full block py-5 lg:py-1 pl-4 rounded-lg transition-all duration-300">About</a></li>
@@ -58,8 +58,8 @@
         </div>
     </section>
 
-    <section class="w-full h-20 bg-blue-500">
-        <h1>Join our mutitudes of users today</h1>
+    <section class="w-full h-[50vh] bg-yellow-500 flex justify-center items-center text-white">
+        <h1 class="text-[2em] font-semibold text-blue-500">Join our mutitudes of users today</h1>
     </section>
         
 <script src="./index.js"></script>
